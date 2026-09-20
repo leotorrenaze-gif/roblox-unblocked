@@ -1,8 +1,6 @@
 'use client'
 
 import { useMemo, useState } from 'react'
-import { LockKeyhole } from 'lucide-react'
-
 const embedUrl =
   'https://cherrion.top/embed?u=https%3A%2F%2Fnowgg.fun%2Fapps%2Fa%2F19900%2Fb.html'
 
@@ -55,10 +53,6 @@ export default function Page() {
       {!unlocked && (
         <section aria-label="Launch calculator" className="absolute inset-0 z-20 flex h-full w-full items-center justify-center bg-zinc-950 px-4 text-white">
           <div className="w-full max-w-md">
-            <div className="mb-5 text-center">
-              <LockKeyhole className="mx-auto mb-3 size-10 text-cyan-300" />
-              <h1 className="text-2xl font-bold">Enter launch code</h1>
-            </div>
             <div className="rounded-3xl border border-white/15 bg-zinc-900/95 p-5 shadow-2xl">
               <div className="mb-4 overflow-hidden rounded-2xl bg-black px-4 py-6 text-right text-4xl font-medium tabular-nums text-cyan-100" aria-live="polite">{display}</div>
               <div className="grid grid-cols-4 gap-3">{calculatorButtons.flat().map((button) => <button key={button} onClick={() => pressButton(button)} className={`h-14 rounded-2xl text-lg font-semibold transition hover:bg-white/20 ${button === '=' ? 'bg-cyan-300 text-zinc-950 hover:bg-cyan-200' : 'bg-white/10 text-white'}`}>{button}</button>)}</div>
