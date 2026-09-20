@@ -58,7 +58,6 @@ export default function Page() {
             <div className="mb-5 text-center">
               <LockKeyhole className="mx-auto mb-3 size-10 text-cyan-300" />
               <h1 className="text-2xl font-bold">Enter launch code</h1>
-              <p className="mt-2 text-sm text-zinc-400">Type 3030 on the calculator to launch the site.</p>
             </div>
             <div className="rounded-3xl border border-white/15 bg-zinc-900/95 p-5 shadow-2xl">
               <div className="mb-4 overflow-hidden rounded-2xl bg-black px-4 py-6 text-right text-4xl font-medium tabular-nums text-cyan-100" aria-live="polite">{display}</div>
